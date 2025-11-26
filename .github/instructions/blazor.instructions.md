@@ -23,7 +23,7 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 - Use data binding effectively with @bind.
 - Leverage Dependency Injection for services in Blazor.
 - Structure Blazor components and services following Separation of Concerns.
-- Always use the latest version C#, currently C# 13 features like record types, pattern matching, and global usings.
+- Always use the latest version C#
 
 ## Error Handling and Validation
 
@@ -43,7 +43,6 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 
 - Implement in-memory caching for frequently used data, especially for Blazor Server apps. Use IMemoryCache for lightweight caching solutions.
 - For Blazor WebAssembly, utilize localStorage or sessionStorage to cache application state between user sessions.
-- Consider Distributed Cache strategies (like Redis or SQL Server Cache) for larger applications that need shared state across multiple users or clients.
 - Cache API calls by storing responses to avoid redundant calls when data is unlikely to change, thus improving the user experience.
 
 ## State Management Libraries
@@ -60,7 +59,7 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 
 ## Testing and Debugging in Visual Studio
 
-- All unit testing and integration testing should be done in Visual Studio Enterprise.
+- All unit testing and integration testing should be done in Visual Studio.
 - Test Blazor components and services using xUnit, NUnit, or MSTest.
 - Use Moq or NSubstitute for mocking dependencies during tests.
 - Debug Blazor UI issues using browser developer tools and Visual Studio's debugging tools for backend and server-side issues.
@@ -68,7 +67,7 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 
 ## Security and Authentication
 
-- Implement Authentication and Authorization in the Blazor app where necessary using ASP.NET Identity or JWT tokens for API authentication.
+- Implement Authentication and Authorization in the Blazor app where necessary using Entra External Identity in the first instance, or JWT tokens for API authentication.
 - Use HTTPS for all web communication and ensure proper CORS policies are implemented.
 
 ## API Documentation and Swagger
