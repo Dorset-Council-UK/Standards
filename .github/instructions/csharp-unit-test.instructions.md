@@ -42,7 +42,10 @@ This document provides best practices and standards for writing, organizing, and
 - "Arrange", "Act", "Assert" comments are not rquired but recommended for clarity.
 - Use xUnit's `[Fact]` for single-scenario tests and `[Theory]` with `[MemberData]` for parameterized tests.
 - Prefer `async Task` for test methods that test asynchronous code.
-- Use `Assert` methods to verify outcomes; avoid using multiple asserts per test unless verifying related aspects of the same scenario. 1 Assert in most cases, 2 at most.
+- Use `Assert` methods to verify outcomes
+- Avoid using too many Asserts per unit test.
+  - Normally 1 or 2 Asserts is enough for Endpoint unit tests. At most 4.
+  - For service and repository unit tests, more Asserts may be necessary to verify data integrity.
 - IQueryable can be tested directly if appropriate, but prefer converting to List or FirstOrDefault for clarity.
 - When making tests for services use `BuildMock()` from `MockQueryable.NSubstitute` on `ICollection` to create IQueryable mocks.
 - When making tests for repositories use `BuildMockDbSet()` from `MockQueryable.NSubstitute` on `ICollection` to create DbSet mocks.
