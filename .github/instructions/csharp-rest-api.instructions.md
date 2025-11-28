@@ -108,3 +108,5 @@ applyTo: '**/*.cs, **/*.json'
 - Demonstrate deployment to Azure App Service, Azure Container Apps, or other hosting options.
 - Show how to implement health checks and readiness probes.
 - Explain environment-specific configurations for different deployment stages.
+
+Last reviewed in: November 2025
