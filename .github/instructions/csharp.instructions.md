@@ -113,4 +113,4 @@ applyTo: '**/*.cs'
 - Show how to implement health checks and readiness probes.
 - Explain environment-specific configurations for different deployment stages.
 
-Last reviewed in: November 2025
+Last reviewed in: December 2025 v1
