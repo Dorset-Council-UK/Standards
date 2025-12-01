@@ -13,7 +13,7 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 
 ## Government Coding Standards
 
-- If the GdsBlazorComponents libary is in the dependency list for the project:
+- If the GdsBlazorComponents library is in the dependency list for the project:
   - Look for available components from the GDS library are used to ensure consistency with government design standards.
   - Do not recreate components that are already available in the GDS library.
 - Refer to https://design-system.service.gov.uk/ for guidance on design principles and component usage.
