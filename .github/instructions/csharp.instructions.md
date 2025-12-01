@@ -6,7 +6,8 @@ applyTo: '**/*.cs'
 # C# Development
 
 ## C# Instructions
-- Always use the latest version C#, currently C# 14 features.
+- Always use the latest version C# in use within the project but highlight if an upgrade is available.
+- Always highlight if upgrading to a newer version of C# would enable better coding patterns or practices.
 - Write clear and concise comments for each function.
 
 ## General Instructions
@@ -37,7 +38,7 @@ applyTo: '**/*.cs'
 - Explain the purpose of each generated file and folder to build understanding of the project structure.
 - Demonstrate how to organize code using feature folders or domain-driven design principles.
 - Show proper separation of concerns with models, services, and data access layers.
-- Explain the Program.cs and configuration system in ASP.NET Core 10 including environment-specific settings.
+- Explain the Program.cs and configuration system in ASP.NET Core, using the currently referenced version of .NET within the project, and including environment-specific settings.
 
 ## Nullable Reference Types
 
@@ -58,7 +59,7 @@ applyTo: '**/*.cs'
 - Guide users through implementing authentication using JWT Bearer tokens.
 - Explain OAuth 2.0 and OpenID Connect concepts as they relate to ASP.NET Core.
 - Show how to implement role-based and policy-based authorization.
-- Demonstrate integration with Microsoft Entra ID (formerly Azure AD).
+- Demonstrate integration with Microsoft External Identity (formally Azure B2C) and Entra ID (formerly Azure AD).
 - Explain how to secure both controller-based and Minimal APIs consistently.
 
 ## Validation and Error Handling
@@ -84,6 +85,7 @@ applyTo: '**/*.cs'
 - Demonstrate integration with Application Insights for telemetry collection.
 - Show how to implement custom telemetry and correlation IDs for request tracking.
 - Explain how to monitor API performance, errors, and usage patterns.
+- Focus on ensuring that logging will create a clear and joined up result when reviewing the logs in application insights.
 
 ## Testing
 
@@ -107,6 +109,7 @@ applyTo: '**/*.cs'
 ## Deployment and DevOps
 
 - Guide users through containerizing their API using .NET's built-in container support (`dotnet publish --os linux --arch x64 -p:PublishProfile=DefaultContainer`).
+- Note that production applications will run on Windows Server using Microsoft IIS unless otherwise specified. Note any possible differences in deployment for Linux containers versus Windows containers.
 - Explain the differences between manual Dockerfile creation and .NET's container publishing features.
 - Explain CI/CD pipelines for NET applications.
 - Demonstrate deployment to Azure App Service, Azure Container Apps, or other hosting options.
