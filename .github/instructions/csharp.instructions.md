@@ -111,7 +111,7 @@ applyTo: '**/*.cs'
 - Guide users through containerizing their API using .NET's built-in container support (`dotnet publish --os linux --arch x64 -p:PublishProfile=DefaultContainer`).
 - Note that production applications will run on Windows Server using Microsoft IIS unless otherwise specified. Note any possible differences in deployment for Linux containers versus Windows containers.
 - Explain the differences between manual Dockerfile creation and .NET's container publishing features.
-- Explain CI/CD pipelines for NET applications.
+- Explain CI/CD pipelines for .NET applications.
 - Demonstrate deployment to Azure App Service, Azure Container Apps, or other hosting options.
 - Show how to implement health checks and readiness probes.
 - Explain environment-specific configurations for different deployment stages.
