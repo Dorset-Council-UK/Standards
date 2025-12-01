@@ -57,7 +57,7 @@ applyTo: '**/*.cs, **/*.json'
 - Guide users through implementing authentication using JWT Bearer tokens.
 - Explain OAuth 2.0 and OpenID Connect concepts as they relate to ASP.NET Core.
 - Show how to implement role-based and policy-based authorization.
-- Demonstrate integration with Microsoft Entra ID (formerly Azure AD) and External Identity (formaly Azure B2C).
+- Demonstrate integration with Microsoft Entra ID (formerly Azure AD) and External Identity (formerly Azure B2C).
 - Explain how to secure both controller-based and Minimal APIs consistently.
 
 ## Validation and Error Handling
