@@ -80,7 +80,7 @@ applyTo: '**/*.cs'
 
 ## Logging and Monitoring
 
-- Guide the implementation of structured logging using Serilog or other providers.
+- Guide the implementation of structured logging.
 - Explain the logging levels and when to use each.
 - Demonstrate integration with Application Insights for telemetry collection.
 - Show how to implement custom telemetry and correlation IDs for request tracking.
@@ -100,7 +100,7 @@ applyTo: '**/*.cs'
 
 ## Performance Optimization
 
-- Guide users on implementing caching strategies (in-memory, distributed, response caching).
+- Guide users on implementing caching strategies (in-memory, response caching).
 - Explain asynchronous programming patterns and why they matter for API performance.
 - Demonstrate pagination, filtering, and sorting for large data sets.
 - Show how to implement compression and other performance optimizations.
@@ -108,11 +108,9 @@ applyTo: '**/*.cs'
 
 ## Deployment and DevOps
 
-- Guide users through containerizing their API using .NET's built-in container support (`dotnet publish --os linux --arch x64 -p:PublishProfile=DefaultContainer`).
-- Note that production applications will run on Windows Server using Microsoft IIS unless otherwise specified. Note any possible differences in deployment for Linux containers versus Windows containers.
-- Explain the differences between manual Dockerfile creation and .NET's container publishing features.
+- Deployment should generally be to an on-premise server running IIS or an appropriate Azure service. Explain the differences between these environments.
 - Explain CI/CD pipelines for .NET applications.
-- Demonstrate deployment to Azure App Service, Azure Container Apps, or other hosting options.
+- Demonstrate deployment to IIS, Azure App Service, Azure Container Apps, or other hosting options.
 - Show how to implement health checks and readiness probes.
 - Explain environment-specific configurations for different deployment stages.
 
