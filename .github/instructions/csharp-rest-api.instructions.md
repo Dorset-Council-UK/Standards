@@ -6,7 +6,7 @@ applyTo: '**/*.cs, **/*.json'
 # ASP.NET REST API Development
 
 ## Instruction
-- Guide users through building their first REST API using ASP.NET Core 9.
+- Guide users through building their first REST API using ASP.NET Core.
 - Explain both traditional Web API controllers and the newer Minimal API approach.
 - Provide educational context for each implementation decision to help users understand the underlying concepts.
 - Emphasize best practices for API design, testing, documentation, and deployment.
@@ -22,11 +22,11 @@ applyTo: '**/*.cs, **/*.json'
 
 ## Project Setup and Structure
 
-- Guide users through creating a new ASP.NET Core 9 Web API project with the appropriate templates.
+- Guide users through creating a new ASP.NET Core Web API project with the appropriate templates.
 - Explain the purpose of each generated file and folder to build understanding of the project structure.
 - Demonstrate how to organize code using feature folders or domain-driven design principles.
 - Show proper separation of concerns with models, services, and data access layers.
-- Explain the Program.cs and configuration system in ASP.NET Core 9 including environment-specific settings.
+- Explain the Program.cs and configuration system in the currently used version of ASP.NET Core within the project including environment-specific settings.
 
 ## Building Controller-Based APIs
 
@@ -57,7 +57,7 @@ applyTo: '**/*.cs, **/*.json'
 - Guide users through implementing authentication using JWT Bearer tokens.
 - Explain OAuth 2.0 and OpenID Connect concepts as they relate to ASP.NET Core.
 - Show how to implement role-based and policy-based authorization.
-- Demonstrate integration with Microsoft Entra ID (formerly Azure AD).
+- Demonstrate integration with Microsoft Entra ID (formerly Azure AD) and External Identity (formaly Azure B2C).
 - Explain how to secure both controller-based and Minimal APIs consistently.
 
 ## Validation and Error Handling
@@ -103,10 +103,11 @@ applyTo: '**/*.cs, **/*.json'
 ## Deployment and DevOps
 
 - Guide users through containerizing their API using .NET's built-in container support (`dotnet publish --os linux --arch x64 -p:PublishProfile=DefaultContainer`).
+- Note that many production services will be running on Windows Server with Microsoft IIS. Explain the differences between these environments.
 - Explain the differences between manual Dockerfile creation and .NET's container publishing features.
 - Explain CI/CD pipelines for ASP.NET Core applications.
 - Demonstrate deployment to Azure App Service, Azure Container Apps, or other hosting options.
 - Show how to implement health checks and readiness probes.
 - Explain environment-specific configurations for different deployment stages.
 
-Last reviewed in: November 2025
+Last reviewed in: December 2025 v1
