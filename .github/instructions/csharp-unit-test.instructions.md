@@ -9,7 +9,7 @@ This document provides best practices and standards for writing, organizing, and
 
 ## General Instructions
 
-- Use the latest supported version of C# (currently C# 13).
+- Use the version of C# referenced in the project but inform us if an upgrade is available and will offer specific improvements linked to the current operation.
 - Use xUnit as the primary testing framework unless otherwise specified. Specifically XUnit v3 or later.
 - Write tests that are deterministic, isolated, and fast.
 - Each test should verify a single behavior or scenario.
