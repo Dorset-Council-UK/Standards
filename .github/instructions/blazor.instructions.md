@@ -16,12 +16,13 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 - Prefer inline functions for smaller components but separate complex logic into code-behind or service classes.
 - Async/await should be used where applicable to ensure non-blocking UI operations.
 
-## Government Coding Standards
+## GOV.UK Design System
 
-- If the GdsBlazorComponents library is in the dependency list for the project:
+- If the [GDS Blazor Components](https://github.com/Dorset-Council-UK/GdsBlazorComponents) library is in the dependency list for the project:
   - Ensure available components from the GDS library are used to ensure consistency with government design standards.
   - Do not recreate components that are already available in the GDS library.
-- Refer to https://design-system.service.gov.uk/ for guidance on design principles and component usage.
+  - A list of components are available on the [README](https://github.com/Dorset-Council-UK/GdsBlazorComponents/blob/main/README.md) page. Example `GdsInputText`.
+- Refer to [GOV.UK Design System](https://design-system.service.gov.uk/) for guidance on design principles when creating new Blazor components or using the GOV.UK HTML directly in your page.
 
 ## Naming Conventions
 
