@@ -3,6 +3,11 @@ description: 'Blazor component and application patterns'
 applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 ---
 
+# Blazor Instructions
+
+- Version: 1.0
+- Last reviewed: December 2025
+
 ## Blazor Code Style and Structure
 
 - Write idiomatic and efficient Blazor and C# code.
@@ -81,5 +86,3 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 
 - Use Swagger/OpenAPI for API documentation for your backend API services.
 - Ensure XML documentation for models and API methods for enhancing Swagger documentation.
-
-Last reviewed in: December 2025 v1
