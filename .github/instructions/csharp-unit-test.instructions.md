@@ -5,6 +5,9 @@ applyTo: 'Tests/**/*.cs'
 
 # C# Unit Testing Guidelines
 
+- Version 1.0
+- Last reviewed: December 2025
+- 
 This document provides best practices and standards for writing, organizing, and maintaining unit tests in C# projects. It is intended to ensure high-quality, maintainable, and reliable tests that support robust software development.
 
 ## General Instructions
@@ -214,5 +217,3 @@ public static IEnumerable<object[]> ThreeFloodReports => [
 - Run all tests with `dotnet test` before submitting changes.
 - Use code coverage tools to identify untested code.
 - Review and update tests when production code changes.
-
-Last reviewed in: December 2025 v1
