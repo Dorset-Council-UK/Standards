@@ -3,6 +3,11 @@ description: 'Blazor component and application patterns'
 applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 ---
 
+# Blazor Instructions
+
+- Version: 1.0
+- Last reviewed: December 2025
+
 ## Blazor Code Style and Structure
 
 - Write idiomatic and efficient Blazor and C# code.
@@ -10,6 +15,14 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 - Use Razor Components appropriately for component-based UI development.
 - Prefer inline functions for smaller components but separate complex logic into code-behind or service classes.
 - Async/await should be used where applicable to ensure non-blocking UI operations.
+
+## GOV.UK Design System
+
+- If the [GDS Blazor Components](https://github.com/Dorset-Council-UK/GdsBlazorComponents) library is in the dependency list for the project:
+  - Ensure available components from the GDS library are used to ensure consistency with government design standards.
+  - Do not recreate components that are already available in the GDS library.
+  - A list of components are available on the [README](https://github.com/Dorset-Council-UK/GdsBlazorComponents/blob/main/README.md) page. Example `GdsInputText`.
+- Refer to [GOV.UK Design System](https://design-system.service.gov.uk/) for guidance on design principles when creating new Blazor components or using the GOV.UK HTML directly in your page.
 
 ## Naming Conventions
 
@@ -51,26 +64,3 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 - Implement advanced state management solutions using libraries like Fluxor or BlazorState when the application grows in complexity.
 - For client-side state persistence in Blazor WebAssembly, consider using Blazored.LocalStorage or Blazored.SessionStorage to maintain state between page reloads.
 - For server-side Blazor, use Scoped Services and the StateContainer pattern to manage state within user sessions while minimizing re-renders.
-
-## API Design and Integration
-
-- Use HttpClient or other appropriate services to communicate with external APIs or your own backend.
-- Implement error handling for API calls using try-catch and provide proper user feedback in the UI.
-
-## Testing and Debugging in Visual Studio
-
-- All unit testing and integration testing should be done in Visual Studio.
-- Test Blazor components and services using xUnit, NUnit, or MSTest.
-- Use Moq or NSubstitute for mocking dependencies during tests.
-- Debug Blazor UI issues using browser developer tools and Visual Studio's debugging tools for backend and server-side issues.
-- For performance profiling and optimization, rely on Visual Studio's diagnostics tools.
-
-## Security and Authentication
-
-- Implement Authentication and Authorization in the Blazor app where necessary using Entra External Identity in the first instance, or JWT tokens for API authentication.
-- Use HTTPS for all web communication and ensure proper CORS policies are implemented.
-
-## API Documentation and Swagger
-
-- Use Swagger/OpenAPI for API documentation for your backend API services.
-- Ensure XML documentation for models and API methods for enhancing Swagger documentation.
