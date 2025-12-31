@@ -18,6 +18,26 @@ This document provides best practices and standards for writing, organizing, and
 - Mock dependencies using NSubstitute and NSubstitute.Analyzers.CSharp.
 - Do not use real external resources (e.g., databases, file systems, network) in unit tests.
 
+## Documentation Philosophy
+
+### Comment Only When Necessary
+
+- **Don't** comment code that is self-explanatory from the function name and signature
+- **Don't** add XML docs to standard Blazor lifecycle methods (`OnInitializedAsync`, `OnAfterRenderAsync`, `DisposeAsync`, etc.) unless there's non-standard behavior
+- **Don't** add XML docs to simple properties where the name makes the purpose obvious (e.g., `public string Title { get; set; }`)
+- **Do** comment design decisions that aren't obvious from the code
+- **Do** comment business rules and complex logic
+- **Do** comment workarounds, TODOs, and non-standard patterns
+- **Do** add XML docs to public APIs intended for reuse
+
+### Cross-Referencing Documentation
+
+- Avoid duplicating documentation between related files (e.g., `.razor` and `.razor.cs`)
+
+### Design Decision Comments
+
+- Use `<remarks>` sections or inline comments to document **why** you made a choice:
+
 ## Test Structure and Organization
 
 - Place all unit tests in the `Tests` project/directory.
