@@ -29,6 +29,7 @@ applyTo: '**/*.cs'
 - Ensure that the final return statement of a method is on its own line.
 - Use pattern matching and switch expressions wherever possible.
 - Use `nameof` instead of string literals when referring to member names.
+- Do not use regions (`#region` and `#endregion`) to organize code unless developer has already added them.
 - Ensure that XML doc comments are created for any public APIs. When applicable, include `<example>` and `<code>` documentation in the comments.
 
 ## Project Setup and Structure
@@ -76,6 +77,26 @@ applyTo: '**/*.cs'
 - Show how to document endpoints, parameters, responses, and authentication.
 - Explain versioning in both controller-based and Minimal APIs.
 - Guide users on creating meaningful API documentation that helps consumers.
+
+## Documentation Philosophy
+
+### Comment Only When Necessary
+
+- **Don't** comment code that is self-explanatory from the function name and signature
+- **Don't** add XML docs to standard Blazor lifecycle methods (`OnInitializedAsync`, `OnAfterRenderAsync`, `DisposeAsync`, etc.) unless there's non-standard behavior
+- **Don't** add XML docs to simple properties where the name makes the purpose obvious (e.g., `public string Title { get; set; }`)
+- **Do** comment design decisions that aren't obvious from the code
+- **Do** comment business rules and complex logic
+- **Do** comment workarounds, TODOs, and non-standard patterns
+- **Do** add XML docs to public APIs intended for reuse
+
+### Cross-Referencing Documentation
+
+- Avoid duplicating documentation between related files (e.g., `.razor` and `.razor.cs`)
+
+### Design Decision Comments
+
+- Use `<remarks>` sections or inline comments to document **why** you made a choice:
 
 ## Logging and Monitoring
 
