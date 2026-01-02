@@ -29,7 +29,7 @@ applyTo: '**/*.cs'
 - Ensure that the final return statement of a method is on its own line.
 - Use pattern matching and switch expressions wherever possible.
 - Use `nameof` instead of string literals when referring to member names.
-- Do not use regions (`#region` and `#endregion`) to organize code unless developer has already added them.
+- Encourage grouping of related code to improve readability but avoid using regions for this purpose unless developer has already added them.
 - Ensure that XML doc comments are created for any public APIs. When applicable, include `<example>` and `<code>` documentation in the comments.
 
 ## Project Setup and Structure
