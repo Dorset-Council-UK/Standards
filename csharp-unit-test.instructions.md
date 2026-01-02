@@ -5,11 +5,14 @@ applyTo: 'Tests/**/*.cs'
 
 # C# Unit Testing Guidelines
 
+- Version 1.0
+- Last reviewed: December 2025
+- 
 This document provides best practices and standards for writing, organizing, and maintaining unit tests in C# projects. It is intended to ensure high-quality, maintainable, and reliable tests that support robust software development.
 
 ## General Instructions
 
-- Use the version of C# referenced in the project, add a comment in the PR if an upgrade is available and will offer specific improvements linked to the current operation.
+- Use the version of C# referenced in the project, add a comment in the PR if an upgrade is available and will offer specific improvements relevant to the changes in the current PR.
 - Use xUnit as the primary testing framework unless otherwise specified. Specifically XUnit v3 or later.
 - Write tests that are deterministic, isolated, and fast.
 - Each test should verify a single behavior or scenario.
@@ -214,5 +217,3 @@ public static IEnumerable<object[]> ThreeFloodReports => [
 - Run all tests with `dotnet test` before submitting changes.
 - Use code coverage tools to identify untested code.
 - Review and update tests when production code changes.
-
-Last reviewed in: December 2025 v1
