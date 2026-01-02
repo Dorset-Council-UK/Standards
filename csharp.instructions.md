@@ -11,7 +11,6 @@ applyTo: '**/*.cs'
 ## C# Instructions
 - Always use the latest version C# in use within the project but highlight if an upgrade is available.
 - Always highlight if upgrading to a newer version of C# would enable better coding patterns or practices.
-- Write clear and concise comments for each function.
 
 ## General Instructions
 - Make only high confidence suggestions when reviewing code changes.
