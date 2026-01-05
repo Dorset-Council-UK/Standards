@@ -32,7 +32,7 @@ applyTo: '**/*.cs'
 - Ensure that the final return statement of a method is on its own line.
 - Use pattern matching and switch expressions wherever possible.
 - Use `nameof` instead of string literals when referring to member names.
-- Encourage grouping of related code to improve readability but avoid using regions for this purpose unless developer has already added them.
+- Encourage grouping of related code to improve readability but avoid using regions for this purpose unless developers have already added them.
 
 ## Project Setup and Structure
 
