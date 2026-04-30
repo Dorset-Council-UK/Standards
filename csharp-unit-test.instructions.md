@@ -5,8 +5,8 @@ applyTo: 'Tests/**/*.cs'
 
 # C# Unit Testing Guidelines
 
-- Version 1.0
-- Last reviewed: December 2025
+- Version 1.1
+- Last reviewed: April 2026
 - 
 This document provides best practices and standards for writing, organizing, and maintaining unit tests in C# projects. It is intended to ensure high-quality, maintainable, and reliable tests that support robust software development.
 
