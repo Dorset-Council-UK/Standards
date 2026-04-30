@@ -20,6 +20,7 @@ This document provides best practices and standards for writing, organizing, and
 - Avoid duplicating test logic; use [Theory] and [MemberData] for parameterized tests.
 - Mock dependencies using NSubstitute and NSubstitute.Analyzers.CSharp.
 - Do not use real external resources (e.g., databases, file systems, network) in unit tests.
+- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read. 
 
 ## Test Structure and Organization
 
