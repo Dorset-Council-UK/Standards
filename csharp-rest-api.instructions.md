@@ -9,7 +9,7 @@ applyTo: '**/Controllers/*.cs, **/Endpoints/*.cs', '**/Services/*.cs, **/Reposit
 - Last reviewed: May 2026
 
 ## General Instructions
-- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read. 
+- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read.
 
 ## API Instructions
 

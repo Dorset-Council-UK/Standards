@@ -5,9 +5,9 @@ applyTo: 'Tests/**/*.cs'
 
 # C# Unit Testing Guidelines
 
-- Version 1.1
+- Version: 1.1
 - Last reviewed: May 2026
-- 
+
 This document provides best practices and standards for writing, organizing, and maintaining unit tests in C# projects. It is intended to ensure high-quality, maintainable, and reliable tests that support robust software development.
 
 ## General Instructions
@@ -20,7 +20,7 @@ This document provides best practices and standards for writing, organizing, and
 - Avoid duplicating test logic; use [Theory] and [MemberData] for parameterized tests.
 - Mock dependencies using NSubstitute and NSubstitute.Analyzers.CSharp.
 - Do not use real external resources (e.g., databases, file systems, network) in unit tests.
-- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read. 
+- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read.
 
 ## Test Structure and Organization
 

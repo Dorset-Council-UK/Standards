@@ -18,7 +18,7 @@ applyTo: '**/*.cs'
 - Write code with good maintainability practices, including comments on why certain design decisions were made.
 - Handle edge cases and write clear exception handling.
 - For libraries or external dependencies, mention their usage and purpose in comments.
-- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read. 
+- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read.
 
 ## Naming Conventions
 
