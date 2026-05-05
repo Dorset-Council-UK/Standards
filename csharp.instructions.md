@@ -11,6 +11,7 @@ applyTo: '**/*.cs'
 ## C# Instructions
 - Always use the latest version C# in use within the project but highlight if an upgrade is available.
 - Always highlight if upgrading to a newer version of C# would enable better coding patterns or practices.
+- Never comment on files using Microsoft.EntityFrameworkCore.Migrations as these are auto-generated and should not be modified manually. If you find an issue comment on the DbContext model that generated the issue instead.
 
 ## General Instructions
 - Make only high confidence suggestions when reviewing code changes.
