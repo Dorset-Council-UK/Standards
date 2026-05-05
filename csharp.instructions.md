@@ -6,7 +6,7 @@ applyTo: '**/*.cs'
 # C# Development
 
 - Version: 1.1
-- Last reviewed: April 2026
+- Last reviewed: May 2026
 
 ## C# Instructions
 - Always use the latest version C# in use within the project but highlight if an upgrade is available.
