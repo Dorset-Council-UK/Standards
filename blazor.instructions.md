@@ -5,8 +5,11 @@ applyTo: '**/*.razor, **/*.razor.cs, **/*.razor.css'
 
 # Blazor Instructions
 
-- Version: 1.0
-- Last reviewed: December 2025
+- Version: 1.1
+- Last reviewed: May 2026
+
+## General Instructions
+- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read.
 
 ## Blazor Code Style and Structure
 

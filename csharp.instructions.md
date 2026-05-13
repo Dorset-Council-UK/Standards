@@ -5,18 +5,20 @@ applyTo: '**/*.cs'
 
 # C# Development
 
-- Version: 1.0
-- Last reviewed: December 2025
+- Version: 1.1
+- Last reviewed: May 2026
 
 ## C# Instructions
 - Always use the latest version C# in use within the project but highlight if an upgrade is available.
 - Always highlight if upgrading to a newer version of C# would enable better coding patterns or practices.
+- Never comment on files using Microsoft.EntityFrameworkCore.Migrations as these are auto-generated and should not be modified manually. If you find an issue comment on the DbContext model that generated the issue instead.
 
 ## General Instructions
 - Make only high confidence suggestions when reviewing code changes.
 - Write code with good maintainability practices, including comments on why certain design decisions were made.
 - Handle edge cases and write clear exception handling.
 - For libraries or external dependencies, mention their usage and purpose in comments.
+- Never suggest changes to a file without first checking the current version of the file. The developer may have already implemented changes since it was last read.
 
 ## Naming Conventions
 
