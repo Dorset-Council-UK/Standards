@@ -6,8 +6,6 @@ applyTo: '**/*.ts'
 
 # TypeScript Development
 
-> These instructions assume projects are built with TypeScript 5.x (or newer, preferably 6.x ready for transition to 7.x) compiling to an ES2022 JavaScript baseline. Adjust guidance if your runtime requires older language targets or down-level transpilation.
-
 - Version: 1.0
 - Last reviewed: June 2026
 
