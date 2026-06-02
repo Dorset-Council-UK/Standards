@@ -36,7 +36,7 @@ applyTo: '**/*.ts'
 
 - Use PascalCase for classes, interfaces, enums, and type aliases; camelCase for everything else.
 - Skip interface prefixes like `I`; rely on descriptive names.
-- Name things for their behavior or domain meaning, not implementation.
+- Name things for their behaviour or domain meaning, not implementation.
 
 ## Formatting & Style
 
@@ -51,7 +51,8 @@ applyTo: '**/*.ts'
 - Use discriminated unions for realtime events and state machines.
 - Centralize shared contracts instead of duplicating shapes.
 - Express intent with TypeScript utility types (e.g., `Readonly`, `Partial`, `Record`).
-
+- Use `const` and `let` appropriately; `const` for constants and `let` for variables that may need to be reassigned later.
+ 
 ## Async, Events & Error Handling
 
 - Use `async/await`; wrap awaits in try/catch with structured errors.
@@ -70,7 +71,6 @@ applyTo: '**/*.ts'
 ## External Integrations
 
 - Instantiate clients outside hot paths and inject them for testability.
-- Never hardcode secrets; load them from secure sources.
 - Apply retries, backoff, and cancellation to network or IO calls.
 - Normalize external responses and map errors to domain shapes.
 
@@ -81,7 +81,7 @@ applyTo: '**/*.ts'
 - Encode untrusted content before rendering HTML; use framework escaping or trusted types.
 - Use parameterized queries or prepared statements to block injection.
 - Keep secrets in secure storage, rotate them regularly, and request least-privilege scopes.
-- Favor immutable flows and defensive copies for sensitive data.
+- Favour immutable flows and defensive copies for sensitive data.
 - Use vetted crypto libraries only.
 - Patch dependencies promptly and monitor advisories.
 
@@ -90,6 +90,7 @@ applyTo: '**/*.ts'
 - Reach configuration through shared helpers and validate with schemas or dedicated validators.
 - Handle secrets via the project's secure storage; guard `undefined` and error states.
 - Document new configuration keys and update related tests.
+- Never hardcode secrets; load them from secure sources.
 
 ## UI & UX Components
 
@@ -100,7 +101,7 @@ applyTo: '**/*.ts'
 ## Testing Expectations
 
 - Add or update unit tests with the project's framework and naming style.
-- Expand integration or end-to-end suites when behavior crosses modules or platform APIs.
+- Expand integration or end-to-end suites when behaviour crosses modules or platform APIs.
 - Run targeted test scripts for quick feedback before submitting.
 - Avoid brittle timing assertions; prefer fake timers or injected clocks.
 
