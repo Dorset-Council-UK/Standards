@@ -1,6 +1,6 @@
 ---
 description: 'Inbox messaging standards for Azure Service Bus consumers and worker orchestration'
-applyTo: 'Messaging/**/*.cs, /Consumers/*.cs, Messaging/InboxWorker.cs, Tests/Messaging//*.cs'
+applyTo: 'Messaging/**/*.cs, **/Consumers/*.cs, Messaging/InboxWorker.cs, Tests/Messaging/**/*.cs'
 ---
 
 # Messaging inbox standards
@@ -45,7 +45,7 @@ public async Task HandleMessage(ProcessMessageEventArgs args)
 {
   ...
 
-  // InboxWorker and Consumers are singletons, so we have to create a scope to our service
+  // InboxWorker and Consumers are singletons, so we have to create a scope for our services
   await using var scope = scopeFactory.CreateAsyncScope();
   IYourService yourService = scope.ServiceProvider.GetRequiredService<IYourService>();
   var result = await yourService.Update(message.Reference, RecordStatusIds.ActionNeeded, args.CancellationToken);
@@ -65,7 +65,8 @@ public async Task HandleMessage(ProcessMessageEventArgs args)
 1. never swallow exceptions, always log and settle the message
 
 ![Inbox message handling flow](inbox.png)
-*example flow between subcription and consumer*
+
+*example flow between subscription and consumer*
 
 ## Industry messaging features (recommended baseline)
 
